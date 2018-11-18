@@ -31,8 +31,20 @@
   margin: 30px;
 }
 
+.jumbotron .titleSpan {
+  color: #3bff1b;
+}
+
 .jumbotron p {
   margin: 30px;
+}
+
+.jumbotron .intro {
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+  border-radius: 5px;
+  background: rgba(73, 73, 73, 0.5);
 }
 
 .panel {
@@ -77,21 +89,12 @@
   border: none;
 }
 
-#about_us .panel .panel-body form, #admission .panel .panel-body form {
-  width: 80%;
-  display: block;
-  margin: auto;
-  border: none;
-}
-
 #about_us .panel .panel-body form textarea, #admission .panel .panel-body form textarea {
   resize: none;
 }
 
-#highlights .row {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
+#highlights p {
+  text-indent: 35px;
 }
 
 #gallery .panel-body {
@@ -110,15 +113,45 @@
   margin: 5px;
 }
 
-.scrollToTop {
+#scrollToTop {
   position: fixed;
   bottom: 10px;
   right: 10px;
   z-index: 9999;
-  display: none;
+  transform: scale(0);
+  opacity: .7;
+  transition: .5s;
+}
+
+#scrollToTop:hover {
+  opacity: 1;
+}
+
+#scrollToTop img {
+  pointer-events: none;
+}
+
+.showArrow {
+  animation: zoomIn .5s;
 }
 
 footer {
   margin-top: 40px;
   margin-bottom: 20px;
+  height: 60px;
+  line-height: 60px;
+  background: #222;
+  text-align: center;
+}
+
+@keyframes zoomIn {
+  0% {
+    transform: scale(1.2);
+  }
+  60% {
+    transform: scale(0.9);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
