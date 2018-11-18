@@ -266,41 +266,48 @@
 
     <div id="admission">
       <div class="container">
-        <div class="panel panel-primary">
-          <div class="panel-heading"><h3>Admission Form</h3></div>
+        <div class="panel panel-default">
+          <div class="panel-title">
+            <img class="img-responsive" src="img/join_us_image2.jpg" width="350" alt="">
+          </div>
           <div class="panel-body">
-            <form>
-              <p>Enter the following details:</p>
-              <p>
-                <small>All fields required.</small>
-              </p>
+            <div class="panel panel-primary">
+              <div class="panel-heading"><h3>Admission Form</h3></div>
+              <div class="panel-body">
+                <form>
+                  <p>Enter the following details:</p>
+                  <p>
+                    <small>All fields required.</small>
+                  </p>
 
-              <div class="form-group">
-                <label>Name of child:</label>
-                <input type="text" class="form-control" id="name" placeholder="Name of child" required>
+                  <div class="form-group">
+                    <label>Name of child:</label>
+                    <input type="text" class="form-control" id="name" placeholder="Name of child" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Date of birth:</label>
+                    <input type="date" class="form-control" id="DOB" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Gender:</label>
+                    <select class="form-control">
+                      <option>Select one</option>
+                      <option>Female</option>
+                      <option>Male</option>
+                    </select>
+                  </div>
+                  <div class="form-group">
+                    <label>Phone number:</label>
+                    <input type="number" class="form-control" id="phone" placeholder="Phone number" required>
+                  </div>
+                  <div class="form-group">
+                    <label>Address:</label>
+                    <textarea class="form-control" id="address" rows="5" required></textarea>
+                  </div>
+                  <button type="submit" class="btn btn-danger btn-lg center-block">Submit</button>
+                </form>
               </div>
-              <div class="form-group">
-                <label>Date of birth:</label>
-                <input type="date" class="form-control" id="DOB" required>
-              </div>
-              <div class="form-group">
-                <label>Gender:</label>
-                <select class="form-control">
-                  <option>Select one</option>
-                  <option>Female</option>
-                  <option>Male</option>
-                </select>
-              </div>
-              <div class="form-group">
-                <label>Phone number:</label>
-                <input type="number" class="form-control" id="phone" placeholder="Phone number" required>
-              </div>
-              <div class="form-group">
-                <label>Address:</label>
-                <textarea class="form-control" id="address" rows="5" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-danger btn-lg center-block">Submit</button>
-            </form>
+            </div>
           </div>
         </div>
       </div>
